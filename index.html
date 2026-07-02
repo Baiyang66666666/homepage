@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baiyang Qu</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-nav">
+      <nav aria-label="Primary navigation">
+        <button class="active" data-page-target="home" type="button">Home</button>
+        <button data-page-target="about" type="button">About</button>
+        <button data-page-target="research" type="button">Research</button>
+        <button data-page-target="experience" type="button">Experience</button>
+        <button data-page-target="contact" type="button">Contact</button>
+      </nav>
+    </header>
+
+    <main class="site-shell">
+      <section class="page active home-page" data-page="home" aria-label="Baiyang Qu interactive hero">
+        <div class="ambient-ring" aria-hidden="true"></div>
+        <div class="identity">
+          <p class="label">AI & Computational Creativity & Neurosymbolic</p>
+          <h1>Baiyang Qu</h1>
+          <p class="role">PhD Student · University of Leicester</p>
+        </div>
+
+        <div class="portrait-stage" id="heroShell" aria-label="Mouse controlled folded portrait animation">
+          <div class="video-lens" id="videoLens">
+            <video
+              id="foldVideo"
+              src="./assets/folded-portrait-crumple.mp4"
+              muted
+              playsinline
+              preload="auto"
+              aria-hidden="true"
+            ></video>
+            <canvas id="videoCanvas"></canvas>
+          </div>
+          <span id="progressValue" aria-hidden="true">0.000</span>
+        </div>
+
+        <div class="home-socials" aria-label="Profile links">
+          <a aria-label="Email Baiyang Qu" href="mailto:bq19@leicester.ac.uk">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h17v11h-17z"/><path d="m4 7 8 6 8-6"/></svg>
+          </a>
+          <a aria-label="GitHub" href="https://github.com/Baiyang66666666">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.3 9.3 0 0 0-3 18.1c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.3-2.3-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.5 9.5 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1a3.6 3.6 0 0 1 .1 2.7 3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.8 1 .8 2v2.9c0 .3.2.6.8.5A9.3 9.3 0 0 0 12 2.8Z"/></svg>
+          </a>
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/baiyang-qu-6b1b19249/">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.8h3.2V19H5zM6.6 4.7a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6ZM10.6 8.8h3.1v1.4h.1c.4-.8 1.5-1.7 3.1-1.7 3.3 0 3.9 2.2 3.9 5V19h-3.2v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6v5h-3.2z"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="page about-page" data-page="about" aria-label="About Baiyang Qu">
+        <div class="portfolio-layout about-layout">
+          <div class="page-title">
+            <p class="kicker">About</p>
+            <h2>Researcher at the intersection of creative AI, games, and neurosymbolic systems.</h2>
+            <p>
+              I design AI systems that generate, evaluate, and verify interactive experiences,
+              with a focus on making machine reasoning understandable and usable.
+            </p>
+          </div>
+          <div class="profile-copy">
+            <article class="text-block">
+              <span>Current</span>
+              <h3>University of Leicester</h3>
+              <p>
+                Computer Science PhD student researching generative agents as autonomous
+                evaluators of games, with a focus on interactive narrative, verification,
+                and human-facing AI systems.
+              </p>
+            </article>
+            <article class="text-block">
+              <span>Research Style</span>
+              <p>LLM automation, symbolic planning, neurosymbolic reasoning, RAG, and evaluation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page research-page" data-page="research" aria-label="Research projects">
+        <div class="research-stage">
+          <p class="kicker">Research</p>
+          <div class="project-hub">
+            <button class="project-tile primary" data-page-target="project-disco" type="button">
+              <span class="project-mark" aria-hidden="true">
+                <i></i>
+                <i></i>
+                <i></i>
+              </span>
+              <span>Interactive Narrative</span>
+              <h3>Disco-Narrative</h3>
+              <p>
+                A playable research system for turning short story prompts into symbolic
+                actions, milestone states, and planner-checkable narrative paths.
+              </p>
+              <b>Open Project</b>
+            </button>
+            <button class="project-tile" data-page-target="project-ctm" type="button">
+              <span class="project-mark clinical-mark" aria-hidden="true">
+                <i></i>
+                <i></i>
+                <i></i>
+              </span>
+              <span>Neurosymbolic AI</span>
+              <h3>Neurosymbolic Clinical Trial Matching</h3>
+              <p>
+                A hybrid reasoning framework that combines LLM-driven abduction with logical
+                verification for clinical trial eligibility decisions.
+              </p>
+              <b>Open Project</b>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="page project-page" data-page="project-disco" aria-label="Disco-Narrative project">
+        <button class="back-button" data-page-target="research" type="button">Back to Research</button>
+        <div class="portfolio-layout project-layout">
+          <div class="page-title">
+            <p class="kicker">Interactive Narrative</p>
+            <h2>Disco-Narrative</h2>
+            <p>
+              A framework for turning a compact story requirement into a symbolic narrative
+              model that can be tested by a planner.
+            </p>
+          </div>
+          <div class="project-detail">
+            <div class="project-metrics">
+              <span>LLM Automation</span>
+              <span>Symbolic Planning</span>
+              <span>Reachability</span>
+            </div>
+            <div class="project-visual narrative-visual" aria-label="Disco-Narrative workflow">
+              <div class="visual-flow">
+                <button class="flow-node active" data-insight-title="Story Input" data-insight-text="A compact story premise is used as the seed for generating characters, facts, action families, and target milestone states." type="button">Story</button>
+                <button class="flow-node" data-insight-title="Full Symbolic Schema" data-insight-text="The LLM produces structured objects, facts, actions, stages, preconditions, forbidden facts, and effects instead of free-form prose." type="button">Schema</button>
+                <button class="flow-node" data-insight-title="Action Space" data-insight-text="Actions are grouped by family and stage, so later parts of the system can unlock, filter, and select meaningful player-facing actions." type="button">Actions</button>
+                <button class="flow-node" data-insight-title="Milestone Goals" data-insight-text="Milestones are state facts, not fixed actions. This keeps the narrative flexible because different action paths can reach the same required state." type="button">Milestones</button>
+                <button class="flow-node" data-insight-title="Planner Verification" data-insight-text="The solver searches for witness plans from the current state to each milestone and the global goal, returning concrete paths or failure feedback." type="button">Solver</button>
+              </div>
+              <article class="visual-insight">
+                <span>Interactive Flow</span>
+                <h3>Story Input</h3>
+                <p>A compact story premise is used as the seed for generating characters, facts, action families, and target milestone states.</p>
+              </article>
+            </div>
+            <div class="system-map">
+              <button class="research-node active" data-node="0" type="button">LLM Automation</button>
+              <button class="research-node" data-node="1" type="button">Action Generation</button>
+              <button class="research-node" data-node="2" type="button">Milestones</button>
+              <button class="research-node" data-node="3" type="button">Solver</button>
+              <button class="research-node" data-node="4" type="button">Reflection</button>
+              <article class="research-detail" id="researchDetail">
+                <p class="kicker">Selected Node</p>
+                <h3>LLM Automation</h3>
+                <p>
+                  A short story prompt is expanded into a full symbolic schema: objects, facts,
+                  actions, milestones, effects, stages, and action families.
+                </p>
+              </article>
+            </div>
+            <div class="project-notes">
+              <article>
+                <span>Design Goal</span>
+                <p>Keep narrative generation open-ended while still making the generated action space testable.</p>
+              </article>
+              <article>
+                <span>Verification Role</span>
+                <p>Use planner-backed reachability as a structural check before actions are presented as playable options.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page project-page" data-page="project-ctm" aria-label="Neurosymbolic clinical trial matching project">
+        <button class="back-button" data-page-target="research" type="button">Back to Research</button>
+        <div class="portfolio-layout project-layout ctm-layout">
+          <div class="page-title">
+            <p class="kicker">Neurosymbolic AI</p>
+            <h2>Neurosymbolic Clinical Trial Matching</h2>
+            <p>
+              LLM-Driven Abduction and Logical Verification for clinical trial matching.
+            </p>
+          </div>
+          <div class="ctm-board">
+            <div class="project-visual ctm-visual" aria-label="Clinical trial matching workflow">
+              <div class="visual-flow">
+                <button class="flow-node active" data-insight-title="Patient Record" data-insight-text="The system starts from noisy and incomplete clinical text, where relevant trial evidence may be implicit or underspecified." type="button">Record</button>
+                <button class="flow-node" data-insight-title="LLM Abduction" data-insight-text="The LLM proposes plausible missing or implicit clinical facts that may explain the evidence in the patient record." type="button">Abduction</button>
+                <button class="flow-node" data-insight-title="Candidate Facts" data-insight-text="Generated facts are treated as hypotheses rather than final answers, making the reasoning path inspectable." type="button">Facts</button>
+                <button class="flow-node" data-insight-title="Logical Verification" data-insight-text="Formal eligibility rules check numerical thresholds, temporal constraints, and nested logical conditions." type="button">Logic</button>
+                <button class="flow-node" data-insight-title="Auditable Decision" data-insight-text="The final match decision is paired with a reasoning trace that separates language interpretation from deterministic verification." type="button">Decision</button>
+              </div>
+              <article class="visual-insight">
+                <span>Interactive Flow</span>
+                <h3>Patient Record</h3>
+                <p>The system starts from noisy and incomplete clinical text, where relevant trial evidence may be implicit or underspecified.</p>
+              </article>
+            </div>
+            <article class="text-block feature-block">
+              <span>Problem</span>
+              <h3>Clinical evidence is messy, eligibility logic is strict.</h3>
+              <p>
+                LLMs handle noisy clinical language, while symbolic verification handles
+                deterministic thresholds, temporal constraints, and nested eligibility logic.
+              </p>
+            </article>
+            <article class="text-block">
+              <span>Method</span>
+              <p>
+                The framework uses abductive reasoning to infer missing or underspecified
+                clinical facts, then checks the resulting interpretation against formal logic.
+              </p>
+            </article>
+            <article class="text-block">
+              <span>Contribution</span>
+              <p>
+                The work shows that neurosymbolic CTM can improve accuracy, specificity,
+                robustness, and auditability over standalone LLM baselines.
+              </p>
+            </article>
+            <article class="text-block">
+              <span>Keywords</span>
+              <p>Clinical trial matching, abductive reasoning, logical verification, auditable LLM systems.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page experience-page" data-page="experience" aria-label="Experience">
+        <div class="portfolio-layout experience-layout">
+          <div class="page-title">
+            <p class="kicker">Experience</p>
+            <h2>Academic research and applied AI engineering.</h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <time>2026 - Now</time>
+              <h3>PhD Student · University of Leicester</h3>
+              <p>Generative agents, game evaluation, interactive narrative, and AI verification.</p>
+            </article>
+            <article>
+              <time>2026 - Now</time>
+              <h3>Graduate Teaching Assistant</h3>
+              <p>Teaching support for modules including Generative Development and Service-Oriented Architecture.</p>
+            </article>
+            <article>
+              <time>2024 - 2025</time>
+              <h3>AI Engineer · VivaCity Technologies Limited</h3>
+              <p>LLM agents, RAG workflows, image classification services, and analytics dashboards.</p>
+            </article>
+            <article>
+              <time>2023</time>
+              <h3>Student Intern · VoiceBase / LivePerson</h3>
+              <p>Re-implemented MOS prediction for synthetic speech using LDNet, MobileNet, and RNN/FNN decoders.</p>
+            </article>
+            <article>
+              <time>2021</time>
+              <h3>Algorithm Intern · ByteDance</h3>
+              <p>Verified VR positioning accuracy and analyzed motion tracking data to improve positioning algorithms.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page contact-page" data-page="contact" aria-label="Contact">
+        <div class="contact-core">
+          <p class="kicker">Contact</p>
+          <h2>Open to collaboration.</h2>
+          <p class="contact-copy">Research collaborations, creative AI prototypes, and applied neurosymbolic systems are all welcome.</p>
+          <div class="logo-links">
+            <a aria-label="Email Baiyang Qu" href="mailto:bq19@leicester.ac.uk">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 7.5h15v9h-15z"/><path d="m5 8 7 5 7-5"/></svg>
+              <span>Email</span>
+            </a>
+            <a aria-label="GitHub" href="https://github.com/Baiyang66666666">
+              <svg class="icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.3 9.3 0 0 0-3 18.1c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.3-2.3-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.5 9.5 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1a3.6 3.6 0 0 1 .1 2.7 3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.8 1 .8 2v2.9c0 .3.2.6.8.5A9.3 9.3 0 0 0 12 2.8Z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/baiyang-qu-6b1b19249/">
+              <svg class="icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.8h3.2V19H5zM6.6 4.7a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6ZM10.6 8.8h3.1v1.4h.1c.4-.8 1.5-1.7 3.1-1.7 3.3 0 3.9 2.2 3.9 5V19h-3.2v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6v5h-3.2z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+          <p class="email-line">bq19@leicester.ac.uk</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
